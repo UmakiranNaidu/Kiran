@@ -1,0 +1,23 @@
+open class MobileDat(val devicename:String,val mobilepin:Int,var GoogleMail:String,val Phonepepin:Int,var Androidversion:Int){
+    open fun printMobileData(){
+        println("The Mobile Configurations")
+        println(" ")
+    }
+}
+class OnePlus:MobileDat("Oneplus",121120,"oneplusind@gmail.com",8937,14){
+    override fun printMobileData() {
+        super.printMobileData()
+        println(" ")
+        println("DeviceName : $devicename")
+        println("Mobile Pin : $mobilepin")
+        println("GoogleMail :$GoogleMail")
+        println("PhonepePin : $Phonepepin")
+        println("Android Version : $Androidversion")
+
+    }
+
+}
+fun main(){
+    val obj = OnePlus()
+    obj.printMobileData()
+}
